@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wide City Plug | E-Store Kenya</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<a class="skip" href="#grid">Skip to products</a>
+<header><div class="logo">Wide City <span>Plug</span></div>
+<input id="search" type="search" placeholder="Search TVs, irons, kettles..." aria-label="Search products">
+<button id="cartBtn" aria-label="Open cart">🛒 Cart (<span id="count">0</span>)</button></header>
+<section class="hero"><h1>Modern electronics, delivered across Kenya</h1><p>Shop easily. Pay securely with M-Pesa.</p></section>
+<nav id="cats" aria-label="Categories"></nav>
+<main><div id="grid" class="grid"></div><p id="empty" hidden>No products found. Try another word.</p></main>
+<aside id="cart" aria-label="Shopping cart" hidden>
+<div class="ch"><h2>Your Cart</h2><button id="close" aria-label="Close cart">✕</button></div>
+<div id="items"></div><div class="total">Total: KES <span id="total">0</span></div>
+<label for="phone">M-Pesa number</label>
+<input id="phone" inputmode="numeric" placeholder="07XXXXXXXX" maxlength="12">
+<button id="pay" class="pay">Pay with M-Pesa</button><p id="msg" role="status"></p></aside>
+<footer>© Wide City Plug · Nairobi, Kenya · Help: +254 700 000 000</footer>
+<script src="app.js"></script></body></html>

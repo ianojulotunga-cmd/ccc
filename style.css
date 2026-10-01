@@ -1,0 +1,20 @@
+:root{--g:#1a9e5c;--o:#f08a24;--t:#222;--bg:#fff;--s:#f6f8f7}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Arial,sans-serif;color:var(--t);background:var(--bg)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px}
+header{display:flex;gap:12px;align-items:center;padding:12px 20px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:5;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.4rem}.logo span{color:var(--g)}
+#search{flex:1;min-width:180px;padding:12px;border:2px solid #ddd;border-radius:24px;font-size:1rem}
+button{cursor:pointer;font-size:1rem;border:0;border-radius:8px;padding:10px 16px;background:var(--g);color:#fff;min-height:44px}
+button:focus-visible,input:focus{outline:3px solid var(--o)}
+.hero{background:var(--s);text-align:center;padding:28px 16px}.hero h1{margin:0 0 6px;font-size:1.6rem}
+#cats{display:flex;gap:8px;padding:12px 20px;overflow-x:auto}
+#cats button{background:#fff;color:var(--t);border:2px solid #ddd}#cats button.on{border-color:var(--g);color:var(--g);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;padding:16px 20px}
+.card{border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fff}.card img{width:100%;display:block}
+.card div{padding:12px}.price{color:var(--g);font-weight:800;margin:6px 0}.card button{width:100%;background:var(--o)}
+#cart{position:fixed;right:0;top:0;height:100%;width:min(380px,100%);background:#fff;box-shadow:-4px 0 20px #0003;padding:16px;overflow:auto;z-index:10}
+.ch{display:flex;justify-content:space-between;align-items:center}.ch button{background:#eee;color:#000}
+.row{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #eee}.row img{width:56px;border-radius:6px}
+.row span{flex:1;font-size:.9rem}.row button{padding:4px 10px;min-height:32px}
+.total{font-weight:800;margin:14px 0}#cart input{width:100%;padding:12px;border:2px solid #ddd;border-radius:8px;font-size:1rem}
+.pay{width:100%;margin-top:10px;padding:14px;background:var(--g)}#msg{min-height:1.4em}footer{text-align:center;padding:24px;color:#666;background:var(--s)}
